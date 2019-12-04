@@ -73,6 +73,25 @@ function pick(opts) {
   return RNDocumentPicker.pick(opts);
 }
 
+ const IosUtisList = [
+        'public.png',
+        'public.jpeg',
+        'com.adobe.pdf',
+        'public.data',
+        'org.gnu.gnu-tar-archive',
+        'public.tar-archive',
+        'org.gnu.gnu-zip-archive',
+        'org.gnu.gnu-zip-tar-archive',
+        'public.bzip2-archive',
+        'public.tar-bzip2-archive',
+        'com.apple.binhex-archive',
+        'com.apple.macbinary-archive',
+        'com.allume.stuffit-archive',
+        'public.zip-archive',
+        'com.pkware.zip-archive',
+        'public.content',
+        'public.disk-image'
+      ];
 const Types = {
   mimeTypes: {
     allFiles: '*/*',
@@ -83,7 +102,7 @@ const Types = {
     video: 'video/*',
   },
   utis: {
-    allFiles: 'public.content',
+    allFiles: IosUtisList,
     audio: 'public.audio',
     images: 'public.image',
     plainText: 'public.plain-text',
